@@ -1,0 +1,14 @@
+@use "./variables.scss" as *;
+
+.container {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+  & > * {
+    border: $border-black;
+    background-color: $bg-light-black;
+  }
+}

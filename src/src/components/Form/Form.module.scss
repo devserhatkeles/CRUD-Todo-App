@@ -1,0 +1,74 @@
+@use "../../styles/variables" as *;
+
+.form {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  backdrop-filter: blur(2px);
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    text-indent: 0.5rem;
+    border: none;
+    flex: 1;
+    transition: all 300ms;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.75rem;
+    border: $border-black;
+    background-color: $bg-light-black;
+    transition: all 300ms;
+    cursor: pointer;
+    color: #fff;
+
+    &:hover {
+      background-color: rgba($bg-light-black, 0.5);
+    }
+  }
+
+  &__edit {
+    color: #fff;
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__button-box {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+
+    & > button {
+      font-size: 2rem;
+    }
+  }
+}
